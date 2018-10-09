@@ -40,7 +40,15 @@
                         <textarea name="message" id="message" placeholder="your message"></textarea>
                     </div>
                 </div>
-                <div data-netlify-recaptcha></div>
+                <div class="grid-x grid-padding-x">
+                    <div class="small-3 cell">
+                        <label class="text-right middle">Captcha</label>
+                    </div>
+                    <div class="small-9 cell">
+                        <div data-netlify-recaptcha></div>
+                    </div>
+                </div>
+
                 <button type="submit" class="success button expanded">Keep me informed</button>
             </form>
         </div>
