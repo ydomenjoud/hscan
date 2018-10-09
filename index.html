@@ -23,16 +23,25 @@
         
         <div class="m50">
             <h3>Stay tuned</h3>
-            <form name="staytuned" method="POST" netlify>
+            <form name="staytuned" method="POST" data-netlify="true">
                 <div class="grid-x grid-padding-x">
                     <div class="small-3 cell">
                         <label for="email" class="text-right middle">Email</label>
                     </div>
                     <div class="small-9 cell">
-                        <input type="text" id="email" placeholder="your email">
+                        <input name="email" type="text" id="email" placeholder="your email">
                     </div>
                 </div>
-                <button type="button" class="success button expanded">Keep me informed</button>
+                <div class="grid-x grid-padding-x">
+                    <div class="small-3 cell">
+                        <label for="message" class="text-right middle">Message</label>
+                    </div>
+                    <div class="small-9 cell">
+                        <textarea name="message" id="message" placeholder="your message"></textarea>
+                    </div>
+                </div>
+                <div data-netlify-recaptcha></div>
+                <button type="submit" class="success button expanded">Keep me informed</button>
             </form>
         </div>
     </div>
